@@ -105,15 +105,15 @@ class AStarExp(AIModule):
 		s = min(x_dist, y_dist) + abs(y_dist - x_dist) # min number of steps
 		delta_h = goal_height - start_height
 
-		if goal_height > start_height:
+		if goal_height > start_height: # going up
 			# h = l * s
 			# 2^l * h/l = total cost
 			m_diff = 1/math.log(2)
-			m_cost = 2 ** m_diff # cost at each level
+			m_cost = 2 ** m_diff 
 			return (delta_h / m_diff) * m_cost
-		elif goal_height < start_height:
+		elif goal_height < start_height: # going down
 			return s * 2**((delta_h)/s) if s != 0 else 0
-		else:
+		else: # same level
 			return s
 
 	def createPath(self, map_):
@@ -160,6 +160,8 @@ class AStarExp(AIModule):
 		return path
 
 class AStarDiv(AIModule):
+	def h(self, map_, start):
+		pass
 
 	def createPath(self, map_):
 		q = PriorityQueue()
@@ -190,7 +192,7 @@ class AStarDiv(AIModule):
 				alt = map_.getCost(v, neighbor) + cost[str(v.x)+','+str(v.y)]
 				if alt < cost[str(neighbor.x)+','+str(neighbor.y)]:
 					cost[str(neighbor.x)+','+str(neighbor.y)] = alt
-					neighbor.comparator = alt
+					neighbor.comparator = alt + self.h(map_, neighbor)
 					prev[str(neighbor.x)+','+str(neighbor.y)] = v
 				q.put(neighbor)
 
@@ -246,50 +248,5 @@ class AStarMSH(AIModule):
 		path.reverse()
 		return path
 		pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
