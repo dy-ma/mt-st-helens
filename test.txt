@@ -1,0 +1,34 @@
+python Main.py -cost exp -AI Djikstra -seed 0
+python Main.py -cost exp -AI AStarExp -seed 0
+python Main.py -cost div -AI Djikstra -seed 0
+python Main.py -cost div -AI AStarDiv -seed 0
+
+python Main.py -cost exp -AI Djikstra -seed 1
+python Main.py -cost exp -AI AStarExp -seed 1
+python Main.py -cost div -AI Djikstra -seed 1
+python Main.py -cost div -AI AStarDiv -seed 1
+
+python Main.py -cost exp -AI Djikstra -seed 2
+python Main.py -cost exp -AI AStarExp -seed 2
+python Main.py -cost div -AI Djikstra -seed 2
+python Main.py -cost div -AI AStarDiv -seed 2
+
+python Main.py -cost exp -AI Djikstra -seed 3
+python Main.py -cost exp -AI AStarExp -seed 3
+python Main.py -cost div -AI Djikstra -seed 3
+python Main.py -cost div -AI AStarDiv -seed 3
+
+python Main.py -cost exp -AI Djikstra -seed 4
+python Main.py -cost exp -AI AStarExp -seed 4
+python Main.py -cost div -AI Djikstra -seed 4
+python Main.py -cost div -AI AStarDiv -seed 4
+
+python Main.py -cost exp -AI Djikstra -seed 5
+python Main.py -cost exp -AI AStarExp -seed 5
+python Main.py -cost div -AI Djikstra -seed 5
+python Main.py -cost div -AI AStarDiv -seed 5
+
+python Main.py -cost exp -AI Djikstra -filename msh.npy
+python Main.py -cost exp -AI AStarExp -filename msh.npy
+python Main.py -cost div -AI Djikstra -filename msh.npy
+python Main.py -cost div -AI AStarDiv -filename msh.npy
