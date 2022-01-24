@@ -1,0 +1,63 @@
+A* Exponential
+=================
+> python Main.py -cost exp -AI AStarExp -seed 0
+Time (s):  0.7449138164520264
+Path cost: 215.5
+Nodes explored:  10577
+
+> python Main.py -cost exp -AI AStarExp -seed 1
+Time (s):  2.1006457805633545
+Path cost: 219.0
+Nodes explored:  10997
+
+> python Main.py -cost exp -AI AStarExp -seed 2
+Time (s):  1.3788530826568604
+Path cost: 226.5
+Nodes explored:  12508
+
+> python Main.py -cost exp -AI AStarExp -seed 3
+Time (s):  6.387869358062744
+Path cost: 349.5
+Nodes explored:  127963
+
+> python Main.py -cost exp -AI AStarExp -seed 4
+Time (s):  1.9555137157440186
+Path cost: 249.5
+Nodes explored:  20790
+
+> python Main.py -cost exp -AI AStarExp -seed 5
+Time (s):  2.2884678840637207
+Path cost: 260.5
+Nodes explored:  28340
+
+A* Division
+=================
+> python Main.py -cost div -AI AStarDiv -seed 0
+Time (s):  0.14260125160217285
+Path cost: 197.0832924952719
+Nodes explored:  1199
+
+> python Main.py -cost div -AI AStarDiv -seed 1
+Time (s):  0.1397092342376709
+Path cost: 197.16506331383655
+Nodes explored:  1199
+
+> python Main.py -cost div -AI AStarDiv -seed 2
+Time (s):  0.1381969451904297
+Path cost: 197.00834323943513
+Nodes explored:  1199
+
+> python Main.py -cost div -AI AStarDiv -seed 3
+Time (s):  0.1403670310974121
+Path cost: 198.13126781818744
+Nodes explored:  1199
+
+> python Main.py -cost div -AI AStarDiv -seed 4
+Time (s):  0.14193081855773926
+Path cost: 197.24833470274933
+Nodes explored:  1199
+
+> python Main.py -cost div -AI AStarDiv -seed 5
+Time (s):  0.14014887809753418
+Path cost: 197.44394694763412
+Nodes explored:  1199
